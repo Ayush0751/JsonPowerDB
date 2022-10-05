@@ -1,0 +1,5 @@
+REMOVE Command - Remove a record
+
+"dbName": "pi_db"  ,
+"rel": "root",
+"record":2
