@@ -1,0 +1,28 @@
+Code for inserting an user data
+
+{
+    "token": "90937745|-31949295648293544|90942112",
+    "cmd": "PUT",
+    "dbName": "Student",
+    "rel": "Student-Rel",
+    "jsonStr": {
+        "id": "1",
+        "name": "Ayush Raj",
+        "email": "rajayush0751@gmail.com",
+        "mobileno": "9572186076"
+    }
+}
+
+
+{
+    "token": "90937745|-31949295648293544|90942112",
+    "cmd": "PUT",
+    "dbName": "Student",
+    "rel": "Student-Rel",
+    "jsonStr": {
+        "id": "2",
+        "name": "Sanu Das",
+        "email": "sanudas@gmail.com",
+        "mobileno": "9978123694"
+    }
+}
