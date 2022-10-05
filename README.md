@@ -30,3 +30,19 @@ Easy and fast to develop database applications without using any server side pro
 - Real time application for data analytics.
 - Live working HTML templates.
 - Any software application that needs backend DB. (Dynamic web-apps/Mobile/Desktop Apps)
+
+## Screenshots:
+- Creating a record
+![image](https://user-images.githubusercontent.com/76896862/194126028-f96a96b2-b612-4169-a531-2da0a3509fe4.png)
+![image](https://user-images.githubusercontent.com/76896862/194126183-34c63e82-aa16-42d3-8743-1bb9b2ffe233.png)
+
+- Deleting a record
+![image](https://user-images.githubusercontent.com/76896862/194126451-da185ca9-a178-4345-94d3-6a92d00a3921.png)
+
+- Retrieve a record
+![image](https://user-images.githubusercontent.com/76896862/194126686-fb831329-46c7-403a-b9b9-d3e5998167e7.png)
+
+- Update a record
+![image](https://user-images.githubusercontent.com/76896862/194126834-b4407019-57ca-4f74-8f2c-aa2a9b7bbf1b.png)
+
+
