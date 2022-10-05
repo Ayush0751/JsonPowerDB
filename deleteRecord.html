@@ -14,42 +14,42 @@
         <div class="container md-3">
             <h2>Delete Record </h2>
             <form>
-              <div class="form-group">
-                 <span> <label for="empId">Employee Id:</label> <label id="empIdMsg"></label> </span> 
-                  <input type="text" class="form-control" id="empId" placeholder="Enter Employee ID :" name="empId">
+                <div class="form-group">
+                    <span> <label for="empId">Employee Id:</label> <label id="empIdMsg"></label> </span> 
+                    <input type="text" class="form-control" id="empId" placeholder="Enter Employee ID :" name="empId">
                 </div>
-              <button type="button" class="btn btn-primary" id="empSave" value="Save" onclick="deleteData();">Retrieve</button>
+                <button type="button" class="btn btn-primary" id="empSave" value="Save" onclick="deleteData();">Delete</button>
             </form>
-          </div>
+        </div>
 
-    <script>
-        function executeCommand(reqString, dbBaseUrl, apiEndPointUrl) {
-            var url = dbBaseUrl + apiEndPointUrl;
-            var jsonObj;
-            $.post(url, reqString, function (result) {
-                jsonObj = JSON.parse(result);
-            }).fail(function (result) {
-                var dataJsonObj = result.responseText;
-                jsonObj = JSON.parse(dataJsonObj);
-            });
-            return jsonObj;
-        }
+        <script>
+            function executeCommand(reqString, dbBaseUrl, apiEndPointUrl) {
+                var url = dbBaseUrl + apiEndPointUrl;
+                var jsonObj;
+                $.post(url, reqString, function (result) {
+                    jsonObj = JSON.parse(result);
+                }).fail(function (result) {
+                    var dataJsonObj = result.responseText;
+                    jsonObj = JSON.parse(dataJsonObj);
+                });
+                return jsonObj;
+            }
 
-        function deleteData(){
-            var token = "9093----";
-            var dbname = "Google";
-            var relationName = "Employee-REL";
-            var id = parseInt(document.getElementById("id").value);
+            function deleteData() {
+                var token = "90937745|-31949295648293544|90942112";
+                var dbname = "SAMPLE";
+                var relationName = "EMP-REL";
+                var id = parseInt(document.getElementById("id").value);
 
-            var reqString = createREMOVERecordRequest(token, dbname, relationName, id);
-            alert(reqString);
-            jQuery.ajaxSetup({async: false});
-            var resultObj = executeCommand(reqString,
-                    "http://api.login2explore.com:5577", "/api/iml");
-            jQuery.ajaxSetup({async: true});
-            alert(JSON.stringify(resultObj));
-            
-        }
-    </script>
+                var reqString = createREMOVERecordRequest(token, dbname, relationName, id);
+                alert(reqString);
+                jQuery.ajaxSetup({async: false});
+                var resultObj = executeCommand(reqString,
+                        "http://api.login2explore.com:5577", "/api/iml");
+                jQuery.ajaxSetup({async: true});
+                alert(JSON.stringify(resultObj));
+
+            }
+        </script>
     </body>
 </html>
