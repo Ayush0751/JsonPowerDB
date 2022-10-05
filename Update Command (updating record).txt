@@ -1,0 +1,8 @@
+UPDATE Command - Update a record
+
+"dbName": "pi_db"  ,
+"rel": "root",
+"jsonStr": {
+	"1": {"email" : "ayush@gmail.com"},
+  "2":{"email" : "sanu@gmail.com"}
+}
